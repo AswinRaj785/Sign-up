@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Signup.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Sign up</title>
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col">
+                <img src="blob-shape 1.png" alt="blob shape" id="topimg">
+                <img src="lappic.png" alt="ad" id="img">
+                <h3><mark>Your data</mark>will be securely stored in our cloud and will be accessed only by you</h3>
+                <img src="blob-shape 2.png" alt="blob shape" id="bottomimg">
+            </div>
+            <div class="col">
+                <div class="container " id="c">
+                    <h1 id="Companyname">My <mark>Company</mark></h1>
+                    <div class="form-group">
+                        <label for="usr">Name:</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <br><br>
+                    <p>By signing up the course prep.you are agree the <a id="terms">terms and conditions</a></p>
+                    <button onclick=validate()> Sign up</button>
+                    <br><br>
+                    <p id="or">----------------------------<span class="dot">or</span>------------------------</p>
+                    <br><br><br>
+                    <div class="signin">
+
+                        <img src="fb.png" style="width: 50px;"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="google.png" style="width: 50px;">
+                        <br><br><br>
+                        <p>Already have an account?<a style="color: rgb(0, 132, 255);">Login</a></p> 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function validate() {
+            var password = document.getElementById("pwd");
+            var username = document.getElementById("usr");
+            console.log(username);
+            var validatepass = /^[A-Za-z]\w{7,14}$/;
+            var letters = /^[A-Za-z]+$/;
+            if (username.value.match(letters)) {
+                console.log('Correct username')
+                if (password.value.match(validatepass)) {
+                    console.log('Correct password')
+                }
+                else {
+                    alert('Wrong password...!')
+                    return false;
+                }
+
+                alert('you are signned in');
+            } else {
+                alert('Wrong username...!')
+                return false;
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

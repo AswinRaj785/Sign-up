@@ -1,0 +1,75 @@
+#img{
+width: 300px;
+height: 400px;
+}
+
+#topimg{
+    top: -80px;
+    left: -80px;
+  position: relative;
+    width: 300px;
+    height: 200px;
+    margin-left: 0%;
+    margin-right: 200px;
+    padding-right: 100px;
+    padding-left: 0px;
+}
+
+#bottomimg{
+    left: -80px;
+    position: relative;
+    width: 250px;
+    height: 200px;
+    padding-right: 50px;
+    padding-left: 0px;
+    
+}
+
+/* #c{
+    margin-left: 200px;
+} */
+
+mark { 
+    background-color: honeydew;
+    color: rgb(0, 132, 255);
+  }
+  #Companyname{
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 100px;
+      padding-bottom: 50px;
+  }
+
+  #terms{
+      color: rgb(0, 132, 255);
+  }
+
+  button{
+      height: 50px;
+      width: 150px;
+      color: honeydew;
+      background-color:rgb(95, 173, 95);
+      position:relative;left: 250px;
+  }
+
+  .dot{
+    height: 25px;
+    width: 25px;
+    background-color:black;
+    border-radius: 50%;
+    display: inline-block;
+    color: honeydew;
+    text-align: center;
+  }
+
+  #or{
+    position:relative;
+      left: 130px;
+  }
+
+  .signin{  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
